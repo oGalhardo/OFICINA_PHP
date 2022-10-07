@@ -1,5 +1,12 @@
+<h2>
+    <?php
+    if(isset($_SESSION['user'])){
+        echo $_SESSION['user']['nome'];
+    }
+    ?>
+</h2>
 
-<div class="row">
+<div class="row mt-3">
     <?php foreach ($noticias as $item) : ?>
         <div class="col-12 col-md-4">
             <div class="card" style="width: 18rem;">
